@@ -1,0 +1,26 @@
+/* import functions have to go first, or they wont work (in most major browsers) */
+@import url("colors.css");
+@import url("startingLauncher.css");
+@import url("dialogs.css");
+@import url("button.css");
+
+/* the rest */
+@font-face {
+    font-family: Jersey25;
+    src: url("../fonts/Jersey25.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    font-family: Jersey25, sans-serif;
+}
+
+body {
+    background-image: url("../imgs/lscreen.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
