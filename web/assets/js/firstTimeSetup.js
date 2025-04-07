@@ -188,3 +188,29 @@ function checkNZPPath() {
         }
     });
 }
+
+// step 4: well, done
+function continueSetupPart4() {
+    // save path
+    if (document.getElementById("folderPath").value.trim() !== "") {
+        eel.write_user_prefs(`nzpInstallPath=${document.getElementById("folderPath").value}\n`)(response => {
+            console.log("Wrote game folder path.");
+        });
+    }
+
+    // finish
+    document.getElementById("licenseAgreement-dialog").innerHTML = `
+        <h1>Setup complete!</h1>
+        <p>The launcher is now ready for use! Thank you for taking your time to set up Nazi Zombies: Launcher, and we hope you enjoy it!</p>
+
+        <br />
+        <br />
+
+        <button onclick="finishSetup()">Finish</button>
+    `; 
+}
+
+// finish
+function finishSetup() {
+    window.location.replace("../../launcher.html");
+}

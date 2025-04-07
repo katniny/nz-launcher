@@ -5,3 +5,4 @@ This file contains important information that Nazi Zombies: Launcher needs to fu
 allowAutoUpdating=True
 startOnStartup=False
 userOS=windows64
+nzpInstallPath=C:\Users\katniny\Downloads\nzportable-win64
