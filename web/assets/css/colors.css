@@ -2,10 +2,22 @@
     --dialog-bg: rgba(20, 20, 20, 0.6);
     --dialog-border: rgba(200, 0, 0, 0.3);
     --dialog-color: #f8f8f8;
+
     --button-bg: rgba(30, 30, 30, 0.8);
     --button-border: rgba(255, 40, 40, 0.4);
     --button-color: #f8f8f8;
     --button-hover-bg: rgba(255, 40, 40, 0.1);
     --button-hover-border: rgba(255, 40, 40, 0.6);
     --button-active-bg: rgba(255, 40, 40, 0.2);
+
+    --a-color: rgba(200, 0, 0, 0.8);
+    --a-hover-color: rgba(200, 0, 0, 1);
+    --a-underline-color: rgba(200, 0, 0, 0.3);
+
+    --input-background: rgba(0, 0, 0, 0.5);
+    --input-color: #fff;
+    --input-border: rgba(255, 0, 0, 0.7);
+    --input-placeholder-color: rgba(255, 0, 0, 0.5);
+    --input-focus-border: rgba(255, 0, 0, 1);
+    --input-hover-border: rgba(255, 0, 0, 1);
 }

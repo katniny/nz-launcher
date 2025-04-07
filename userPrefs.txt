@@ -1,0 +1,7 @@
+Please do not update this file manually!
+Doing so may negatively affect or damage your Nazi Zombies: Launcher install!
+This file contains important information that Nazi Zombies: Launcher needs to function properly.
+
+allowAutoUpdating=True
+startOnStartup=False
+userOS=windows64

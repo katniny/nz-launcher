@@ -3,18 +3,20 @@
 @import url("startingLauncher.css");
 @import url("dialogs.css");
 @import url("button.css");
+@import url("links.css");
+@import url("inputs.css");
 
 /* the rest */
 @font-face {
-    font-family: Jersey25;
-    src: url("../fonts/Jersey25.ttf");
+    font-family: PublicSans;
+    src: url("../fonts/PublicSans-VariableFont_wght.ttf");
 }
 
 * {
     margin: 0;
     padding: 0;
     user-select: none;
-    font-family: Jersey25, sans-serif;
+    font-family: PublicSans, sans-serif;
 }
 
 body {
