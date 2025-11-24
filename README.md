@@ -25,5 +25,6 @@ Links to NZ:P sources:
 - Game Assets: https://github.com/nzp-team/assets
 - Game Source Code: https://github.com/nzp-team/quakec
 - PC Engine (FTEQW): https://github.com/nzp-team/fteqw
+- Documentation: https://github.com/nzp-team/documentation
 
 Any links not included are not provided by the NZ:P Launcher in any capacity.

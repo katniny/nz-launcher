@@ -1,0 +1,20 @@
+# Release v1.0.0:
+- [x] Detect platform automatically
+    - We should avoid making the user manually select, only in edge cases.
+- [x] Default installation location
+    - Let user choose default installation location, and ask if they want to be asked per installation.
+- [ ] Download NZ:P for platform
+    -  Once we know the users platform, we can download the latest release.
+- [ ] Auto-updating
+    - We can look at the latest NZ:P release and see what's changed (where it says, "Changes in the following areas have been made since the last nightly:"), so we're not re-downloading the entire game so we can preserve mods, user maps, settings, etc.
+- [ ] Make her purr-ty
+    - Make the NZ:P Launcher pretty!
+- [ ] Auto-update the launcher
+    - To provide security and the latest features to users, we should auto-update the launcher as well.
+- [ ] Save window preferences
+    - If they want it maximized, launch maximized. If they want it 495x434, save that preference. So on, so forth.
+- [ ] Add GitHub Workflows for PRs & main branch pushes
+    - Add workflows that'll build (but not publish) the NZ:P Launcher on Windows & Linux to ensure builds work.
+- [ ] Add PR and issue templates
+- [ ] Release v1.0.0!
+    - Yippee!

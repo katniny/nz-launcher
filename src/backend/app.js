@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, dialog, ipcMain } = require("electron");
 const path = require("node:path");
 
 // create the window
@@ -9,12 +9,14 @@ function createWindow() {
         width: 800,
         height: 600,
         webPreferences: {
-            preload: path.join(__dirname, "preload.js")
+            preload: path.join(__dirname, "preload.js"),
+            nodeIntegration: false,
+            contextIsolation: true
         }
     });
 
     // load page
-    win.loadFile("./pages/index.html");
+    win.loadFile("./pages/setup.html");
 }
 
 // when ready, create window
@@ -32,4 +34,13 @@ app.whenReady().then(() => {
 app.on("window-all-closed", ()  => {
     if (process.platform !== "darwin")
         app.quit();
+});
+
+// user wants to select a folder
+ipcMain.handle("select-folder", async () => {
+    const result = await dialog.showOpenDialog(win, {
+        properties: ["openDirectory"]
+    });
+    if (result.canceled) return null;
+    return result.filePaths[0];
 });
