@@ -7,7 +7,7 @@
     -  Once we know the users platform, we can download the latest release.
 - [ ] Auto-updating
     - We can look at the latest NZ:P release and see what's changed (where it says, "Changes in the following areas have been made since the last nightly:"), so we're not re-downloading the entire game so we can preserve mods, user maps, settings, etc.
-- [ ] Make her purr-ty
+- [x] Make her purr-ty
     - Make the NZ:P Launcher pretty!
 - [ ] Auto-update the launcher
     - To provide security and the latest features to users, we should auto-update the launcher as well.

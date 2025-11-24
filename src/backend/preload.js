@@ -8,5 +8,6 @@ contextBridge.exposeInMainWorld("system", {
 
 // when user wants to select a folder
 contextBridge.exposeInMainWorld("electronAPI", {
-    selectFolder: () => ipcRenderer.invoke("select-folder")
+    selectFolder: () => ipcRenderer.invoke("select-folder"),
+    getVersion: () => ipcRenderer.invoke("get-app-version")
 });

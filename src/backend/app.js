@@ -8,6 +8,7 @@ function createWindow() {
         // TODO: save preferences so its not starting 800x600 each launch
         width: 800,
         height: 600,
+        autoHideMenuBar: true,
         webPreferences: {
             preload: path.join(__dirname, "preload.js"),
             nodeIntegration: false,
@@ -43,4 +44,9 @@ ipcMain.handle("select-folder", async () => {
     });
     if (result.canceled) return null;
     return result.filePaths[0];
+});
+
+// launcher is requesting the app version
+ipcMain.handle("get-app-version", () => {
+    return app.getVersion();
 });

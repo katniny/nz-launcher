@@ -1,9 +1,14 @@
 /* imports */
+@import url("defaultText.css");
+@import url("setup.css");
+@import url("defaultButton.css");
+@import url("defaultCheckbox.css");
+@import url("launcherInstallButton.css");
 
 /* default styling */
 * {
     margin: 0;
-    padding: 0;   
+    padding: 0;
 }
 
 body {
@@ -13,4 +18,9 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", 
     "Noto Color Emoji";
+    background-image: url("../imgs/nzp_vril_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }

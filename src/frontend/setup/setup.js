@@ -32,14 +32,16 @@ async function startSetup() {
     title.textContent = "Setup: Default Installation Location";
     description.textContent = "Where would you like us to install Nazi Zombies: Portable?";
     contentHTML.innerHTML = `
-        <p id="installationLocation">${defaultLocation}</p> <button onclick="changeInstallLocation()">Change</button>
-        <br />
+        <p><span id="installationLocation">${defaultLocation}</span> <button onclick="changeInstallLocation()">Change</button></p>
         <label>
             <input type="checkbox" id="askBeforeInstallation" />
             Ask where to install Nazi Zombies: Portable before downloading
         </label>
 
-        <button onclick="finishSetup()">Finish</button>
+        <br />
+        <br />
+
+        <button class="finishSetupBtn" onclick="finishSetup()">Finish</button>
     `;
 
     // listen for folder selection now

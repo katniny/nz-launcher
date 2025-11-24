@@ -1,0 +1,14 @@
+p,
+h1,
+h2,
+h3,
+span,
+b,
+i {
+    user-select: none;
+}
+
+/* if its a description, make it slightly darker */
+.description {
+    opacity: 0.8;
+}

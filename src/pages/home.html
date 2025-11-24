@@ -4,9 +4,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>NZ:P Launcher | Home</title>
+
+        <!-- css -->
+        <link rel="stylesheet" href="../frontend/css/all.css">
+
+        <!-- scripts -->
+        <script src="../frontend/debug/debugText.js" type="module" defer></script>
+        <script src="../frontend/installation/changeInstallLocation.js" type="module"></script>
+        <script src="../frontend/home/showLocation.js" type="module" defer></script>
     </head>
 
     <body>
-        <h1>hi</h1>
+        <p class="description" id="launcherVersion">Launcher Version:</p>
+        <p class="description" id="osVersion">OS:</p>
+        <p class="description" id="nzpVersion">NZ:P Version:</p>
+
+        <div class="launcherInstallButton">
+            <p>Install NZ:P to <span id="nzpInstallLocation">location</span> <button onclick="changeInstallLocation()">Change</button></p>
+            <button class="bigButton" onclick="installNZP()">Install</button>
+        </div>
     </body>
 </html>

@@ -1,0 +1,12 @@
+.launcherInstallButton {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    text-align: right;
+}
+
+.launcherInstallButton .bigButton {
+    font-size: 25px;
+    margin-top: 15px;
+    padding: 15px 55px 15px 55px;
+}

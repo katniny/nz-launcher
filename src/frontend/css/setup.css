@@ -1,0 +1,16 @@
+/* the setup div itself */
+.setup {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+/* the content inside the div */
+.setup #content {
+    margin-top: 25px;
+}
