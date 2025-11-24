@@ -9,7 +9,7 @@
     - The user wants to, of course, play the game. We should allow this without making them search for the executable.
     - We should also check if the executable is *there*.
 - [ ] Auto-updating
-    - We can look at the latest NZ:P release and see what's changed (where it says, "Changes in the following areas have been made since the last nightly:"), so we're not re-downloading the entire game so we can preserve mods, user maps, settings, etc.
+    - We can look at the latest NZ:P release and see what's changed (where it says, "Changes in the following areas have been made since the last nightly:"), so we're not re-downloading the entire game so we can preserve mods (unless overwritten by changes), user maps, settings, etc.
 - [x] Make her purr-ty
     - Make the NZ:P Launcher pretty!
 - [ ] Auto-update the launcher
