@@ -5,6 +5,9 @@
     - Let user choose default installation location, and ask if they want to be asked per installation.
 - [x] Download NZ:P for platform
     -  Once we know the users platform, we can download the latest release.
+- [x] Allow playing NZ:P from launcher
+    - The user wants to, of course, play the game. We should allow this without making them search for the executable.
+    - We should also check if the executable is *there*.
 - [ ] Auto-updating
     - We can look at the latest NZ:P release and see what's changed (where it says, "Changes in the following areas have been made since the last nightly:"), so we're not re-downloading the entire game so we can preserve mods, user maps, settings, etc.
 - [x] Make her purr-ty

@@ -8,6 +8,7 @@ async function installNzp() {
     const downloadProgress = document.getElementById("progressBar");
     const downloadProgressText = document.getElementById("downloadProgressText");
     const launcherInstallButton = document.getElementById("launcherInstallButton");
+    const installPlayButton = document.getElementById("installPlayButton");
 
     // stitch together the download url
     const hostUrl = "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-";
@@ -78,6 +79,11 @@ async function installNzp() {
         // show play ui & hide progress bar
         downloadProgressDiv.style.display = "none";
         launcherInstallButton.style.display = "block";
+
+        // save to storage and turn button into play button
+        localStorage.setItem("gameInstalled", true);
+        installPlayButton.textContent = "Play";
+        installPlayButton.setAttribute("onclick", "playNzp()");
     } catch (e) {
         console.error(e);
         alert("An error occurred while trying to install Nazi Zombies: Portable.");

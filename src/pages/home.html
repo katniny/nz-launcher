@@ -13,6 +13,8 @@
         <script src="../frontend/installation/changeInstallLocation.js" type="module"></script>
         <script src="../frontend/home/showLocation.js" type="module" defer></script>
         <script src="../frontend/installation/downloadNzp.js" type="module"></script>
+        <script src="../frontend/playNzp.js" type="module"></script>
+        <script src="../frontend/installation/isNzpInstalled.js" type="module"></script>
     </head>
 
     <body>
@@ -22,7 +24,7 @@
 
         <div class="launcherInstallButton" id="launcherInstallButton">
             <p>Install NZ:P to <span id="nzpInstallLocation">location</span> <button onclick="changeInstallLocation()">Change</button></p>
-            <button class="bigButton" onclick="installNzp()">Install</button>
+            <button class="bigButton" id="installPlayButton" onclick="installNzp()">Install</button>
         </div>
 
         <div class="downloadProgress" id="downloadProgress" style="display: none;">

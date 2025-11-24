@@ -133,3 +133,57 @@ ipcMain.handle("download-and-unzip", async (event, { url, installPath }) => {
 
     return true;
 });
+
+// launcher is requesting the app version
+ipcMain.handle("launch-nzp", async (event, { installPath }) => {
+    const { execFile, execSync } = require("child_process");
+
+    // get executable path
+    //"E:\\nzp-launcher-install\\nzportable-sdl64.exe"
+    let execPath;
+    if (process.platform === "win32") {
+        if (process.arch === "x64")
+            execPath = `${installPath}/nzportable-sdl64.exe`;
+        else if (process.arch === "x32")
+            execPath = `${installPath}/nzportable-sdl32.exe`;
+    } else if (process.platform === "linux") {
+        if (process.arch === "x64")
+            execPath = `${installPath}/nzportable-sdl64`;
+        else if (process.arch === "x32")
+            execPath = `${installPath}/nzportable-sdl32`;
+    }
+    
+    // on linux, make the game executable
+    if (process.platform === "linux")
+        execSync(`chmod +x "${execPath}"`, (err) => {
+            if (err) throw err;
+        });
+
+    // run nzp
+    // note: we NEED the extra arguments, or nz:p will fail to load and it'll just be fte
+    execFile(execPath, ["default.fmf"], { cwd: installPath }, (err) => {
+        if (err) throw err;
+    });
+
+    // else, all went well!
+    return true;
+});
+
+// launcher is requesting to see if game is installed
+ipcMain.handle("check-nzp-install", async (event, { installPath }) => {
+    let execPath;
+    if (process.platform === "win32") {
+        if (process.arch === "x64")
+            execPath = `${installPath}/nzportable-sdl64.exe`;
+        else if (process.arch === "x32")
+            execPath = `${installPath}/nzportable-sdl32.exe`;
+    } else if (process.platform === "linux") {
+        if (process.arch === "x64")
+            execPath = `${installPath}/nzportable-sdl64`;
+        else if (process.arch === "x32")
+            execPath = `${installPath}/nzportable-sdl32`;
+    }
+    
+    // check if file exists
+    return fs.existsSync(execPath);
+});
