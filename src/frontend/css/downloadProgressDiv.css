@@ -1,0 +1,26 @@
+.downloadProgress #progressBar {
+    width: 30%;
+    height: 25px;
+    appearance: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+
+.downloadProgress #downloadProgressText {
+    position: fixed;
+    right: 15px;
+    bottom: 45px;
+}
+
+/* track / background */
+.downloadProgress #progressBar::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+/* filled portion */
+.downloadProgress #progressBar::-webkit-progress-value {
+    background-color: #880808;
+    border-radius: 5px;
+}

@@ -4,6 +4,7 @@
 @import url("defaultButton.css");
 @import url("defaultCheckbox.css");
 @import url("launcherInstallButton.css");
+@import url("downloadProgressDiv.css");
 
 /* default styling */
 * {

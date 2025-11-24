@@ -3,7 +3,7 @@
     - We should avoid making the user manually select, only in edge cases.
 - [x] Default installation location
     - Let user choose default installation location, and ask if they want to be asked per installation.
-- [ ] Download NZ:P for platform
+- [x] Download NZ:P for platform
     -  Once we know the users platform, we can download the latest release.
 - [ ] Auto-updating
     - We can look at the latest NZ:P release and see what's changed (where it says, "Changes in the following areas have been made since the last nightly:"), so we're not re-downloading the entire game so we can preserve mods, user maps, settings, etc.

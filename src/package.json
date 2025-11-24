@@ -12,5 +12,9 @@
   "type": "commonjs",
   "devDependencies": {
     "electron": "^39.2.3"
+  },
+  "dependencies": {
+    "follow-redirects": "^1.15.11",
+    "unzipper": "^0.12.3"
   }
 }
