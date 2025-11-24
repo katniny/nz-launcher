@@ -6,6 +6,9 @@ An unofficial, community-made launcher for Nazi Zombies: Portable.
 (README WIP)
 
 ## ⚒️ Building
+> [!CAUTION]
+> The NZ:P Launcher officially supports Windows and Linux. You may encounter problems on other platforms.
+
 1. Install NodeJS (and npm if provided separately)
     - On macOS/Linux, you can do this via a package manager (e.g., `pacman -S nodejs npm`) or via the [NodeJS website](https://nodejs.org/en/download)
     - On Windows, you can get the installer from the [NodeJS website](https://nodejs.org/en/download) or via Winget with `winget install -e --id OpenJS.NodeJS`
